@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Menu — TELUGU RESTAURANT | Starters, Curries, Biryani &amp; Sweets</title>
+  <meta name="description" content="Explore the authentic food menu of TELUGU RESTAURANT: vegetarian & non-veg starters, Andhra special curries, dum biryanis, traditional thalis, and desserts.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Demo Disclaimer Banner -->
+  <aside class="demo-disclaimer-banner" aria-label="Demo notice">
+    Interactive Demonstration Website — Generic Category Showcase for TELUGU RESTAURANT
+  </aside>
+
+  <!-- Site Header -->
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a href="index.html" class="brand-logo" aria-label="TELUGU RESTAURANT Home">
+        <span class="logo-text">TELUGU RESTAURANT</span>
+        <span class="logo-subtext">Andhra &amp; Telangana Flavours</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Menu -->
+      <nav class="nav-menu" role="navigation" aria-label="Main menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="specialties.html" class="nav-link">Specialties</a>
+        <a href="biryani-meals.html" class="nav-link">Biryani &amp; Meals</a>
+        <a href="offers.html" class="nav-link">Special Offers</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="menu.html" class="btn btn-secondary btn-sm header-cta-desktop">Order Now</a>
+      </nav>
+
+      <!-- Header Action Items: Cart & Hamburger -->
+      <div class="header-actions">
+        <button class="cart-icon-btn cart-toggle-btn" aria-label="View demo shopping cart" title="Demo Cart">
+          🛒
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- PAGE BANNER -->
+    <section class="page-banner" aria-labelledby="menuPageHeading">
+      <div class="container">
+        <h1 id="menuPageHeading" class="page-banner-title">Authentic Food Menu</h1>
+        <p class="page-banner-desc">
+          Crafted with stone-ground Andhra masalas, wholesome Telangana millets, and fresh farm ingredients. Click "Add to Cart" to test our interactive demo ordering.
+        </p>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a>
+          <span>/</span>
+          <span>Food Menu</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU CONTROLS & CONTENT -->
+    <section class="section">
+      <div class="container">
+
+        <!-- Search & Category Filters -->
+        <div class="menu-controls">
+          <div class="menu-search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="menuSearch" class="menu-search-input" placeholder="Search menu dishes (e.g., Biryani, Gongura, 65, Paneer)..." aria-label="Search menu dishes">
+          </div>
+
+          <div class="category-tabs" role="tablist" aria-label="Menu categories">
+            <button class="cat-btn active" data-category="all">All Items</button>
+            <button class="cat-btn" data-category="veg-starters">Veg Starters</button>
+            <button class="cat-btn" data-category="nonveg-starters">Non-Veg Starters</button>
+            <button class="cat-btn" data-category="curries">Andhra Curries</button>
+            <button class="cat-btn" data-category="biryani">Rice &amp; Biryani</button>
+            <button class="cat-btn" data-category="meals">Traditional Meals</button>
+            <button class="cat-btn" data-category="breads">Breads &amp; Rice</button>
+            <button class="cat-btn" data-category="sweets">Sweets &amp; Desserts</button>
+            <button class="cat-btn" data-category="beverages">Beverages</button>
+          </div>
+        </div>
+
+        <!-- REUSED PLACEHOLDER HIGHLIGHT BANNER IN MENU -->
+        <div style="margin-bottom: 2.5rem;">
+          <div class="grid-2">
+            <div class="card">
+              <!-- Reused Concept 7: Telugu snacks and starters -->
+              <div class="placeholder-img concept-7 placeholder-telugu-snacks" style="min-height: 180px;" role="img" aria-label="Telugu snacks and starters banner">
+                <span class="placeholder-badge">Placeholder Concept 7</span>
+                <div class="placeholder-icon" style="font-size: 2rem;">🍢</div>
+                <div class="placeholder-label" style="font-size: 1.1rem;">Crispy Telugu Starters</div>
+                <div class="placeholder-sublabel">Freshly prepared with aromatic curry leaves and Andhra spices</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <!-- Reused Concept 8: Traditional Telugu sweets and desserts -->
+              <div class="placeholder-img concept-8 placeholder-telugu-sweets" style="min-height: 180px;" role="img" aria-label="Traditional Telugu sweets banner">
+                <span class="placeholder-badge">Placeholder Concept 8</span>
+                <div class="placeholder-icon" style="font-size: 2rem;">🍯</div>
+                <div class="placeholder-label" style="font-size: 1.1rem;">Authentic Sweets &amp; Desserts</div>
+                <div class="placeholder-sublabel">Pure desi ghee Bobbatlu, Double Ka Meetha &amp; Qubani</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- MENU ITEMS LIST CONTAINER -->
+        <div id="menuItemsContainer">
+
+          <!-- ==================== 1. VEGETARIAN STARTERS ==================== -->
+          <div class="menu-section-header" style="margin: 2rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);"><span class="diet-dot veg"></span>Vegetarian Starters</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="veg-starters" data-name="Crispy Corn">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Crispy Corn</div>
+              <div class="menu-item-desc">Sweet corn kernels tossed in spicy Andhra seasoning, curry leaves, and green chillies.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹149</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-crispy-corn" data-name="Crispy Corn" data-price="149">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="veg-starters" data-name="Gobi 65">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Gobi 65</div>
+              <div class="menu-item-desc">Crispy batter-fried cauliflower florets seasoned with ginger, garlic, yogurt, and crushed chillies.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹159</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-gobi-65" data-name="Gobi 65" data-price="159">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="veg-starters" data-name="Paneer 65">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Paneer 65</div>
+              <div class="menu-item-desc">Fresh cottage cheese cubes fried and wok-tossed with mustard seeds, curry leaves, and spicy red masala.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹179</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-paneer-65" data-name="Paneer 65" data-price="179">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="veg-starters" data-name="Mirchi Bajji">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Mirchi Bajji</div>
+              <div class="menu-item-desc">Large Bhavnagri chillies stuffed with tangy ajwain and tamarind pulp, dipped in spiced besan batter and fried.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹99</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-mirchi-bajji" data-name="Mirchi Bajji" data-price="99">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 2. NON-VEGETARIAN STARTERS ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);"><span class="diet-dot nonveg"></span>Non-Vegetarian Starters</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="nonveg-starters" data-name="Chicken 65">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Chicken 65</div>
+              <div class="menu-item-desc">Iconic South Indian marinated chicken chunks fried crisp and tempered with curry leaves and green chilli slits.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹219</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-chicken-65" data-name="Chicken 65" data-price="219">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="nonveg-starters" data-name="Chicken Majestic">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Chicken Majestic</div>
+              <div class="menu-item-desc">Crispy boneless chicken strips tossed in a velvety mint, garlic, and spiced yogurt reduction.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹249</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-chicken-majestic" data-name="Chicken Majestic" data-price="249">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="nonveg-starters" data-name="Apollo Fish">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Apollo Fish</div>
+              <div class="menu-item-desc">Delicate boneless fish fillets spiced and finished in an authentic Hyderabadi curd and green chilli tempering.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹279</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-apollo-fish" data-name="Apollo Fish" data-price="279">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="nonveg-starters" data-name="Chilli Chicken">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Chilli Chicken (Andhra Style)</div>
+              <div class="menu-item-desc">Tender chicken tossed with fiery green chillies, onions, and Andhra spicy gravy.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹239</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-chilli-chicken" data-name="Chilli Chicken" data-price="239">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 3. ANDHRA SPECIAL CURRIES ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🍛 Andhra Special Curries</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="curries" data-name="Gongura Chicken">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Gongura Chicken</div>
+              <div class="menu-item-desc">A hallmark Andhra specialty made with tangy sorrel leaves (gongura) and succulent spiced chicken.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹269</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-gongura-chicken" data-name="Gongura Chicken" data-price="269">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="curries" data-name="Natukodi Pulusu">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Natukodi Pulusu</div>
+              <div class="menu-item-desc">Country chicken slow-cooked in a rustic, thin, spicy and tangy gravy with freshly ground coastal spices.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹299</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-natukodi-pulusu" data-name="Natukodi Pulusu" data-price="299">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="curries" data-name="Gutti Vankaya Curry">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Gutti Vankaya Curry</div>
+              <div class="menu-item-desc">Baby brinjals stuffed with slow-roasted peanuts, sesame, dried coconut, and simmering spices.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹189</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-gutti-vankaya" data-name="Gutti Vankaya Curry" data-price="189">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="curries" data-name="Pappu Charu">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Pappu Charu</div>
+              <div class="menu-item-desc">Soulful Andhra lentil and drumstick stew simmered with ripe tomatoes, tamarind, and aromatic mustard tadka.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹129</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-pappu-charu" data-name="Pappu Charu" data-price="129">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 4. RICE AND BIRYANI ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🥘 Rice &amp; Biryani</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="biryani" data-name="Chicken Dum Biryani">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Chicken Dum Biryani</div>
+              <div class="menu-item-desc">Aromatic long-grain basmati rice and marinated chicken cooked in a handi with pure saffron, mint, and desi ghee.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹249</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-chicken-dum-biryani" data-name="Chicken Dum Biryani" data-price="249">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="biryani" data-name="Mutton Biryani">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Mutton Biryani</div>
+              <div class="menu-item-desc">Tender cuts of goat meat marinated overnight in spices, layered with basmati rice and slow dum-cooked.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹329</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-mutton-biryani" data-name="Mutton Biryani" data-price="329">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="biryani" data-name="Veg Biryani">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Veg Biryani</div>
+              <div class="menu-item-desc">Seasonal vegetables and paneer infused with fragrant biryani spices, mint, and slow-cooked over low flame.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹199</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-veg-biryani" data-name="Veg Biryani" data-price="199">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="biryani" data-name="Gongura Chicken Biryani">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Gongura Chicken Biryani</div>
+              <div class="menu-item-desc">A fiery, tangy twist combining authentic Gongura paste with rich Dum Biryani rice and chicken.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹279</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-gongura-chicken-biryani" data-name="Gongura Chicken Biryani" data-price="279">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 5. TRADITIONAL MEALS ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🍃 Traditional Meals &amp; Thalis</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="meals" data-name="Andhra Veg Meals">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Andhra Veg Meals</div>
+              <div class="menu-item-desc">Steamed rice, mudda pappu, podi, ghee, rasam, sambar, pachadi, curd, and appadam on banana leaf.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹179</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-andhra-veg-meals" data-name="Andhra Veg Meals" data-price="179">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="meals" data-name="Andhra Non-Veg Meals">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot nonveg"></span>Andhra Non-Veg Meals</div>
+              <div class="menu-item-desc">Includes hot rice, chicken curry, fish pulusu, mudda pappu, podi, rasam, curd, and papad.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹249</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-andhra-nonveg-meals" data-name="Andhra Non-Veg Meals" data-price="249">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="meals" data-name="Special Andhra Thali">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Special Andhra Thali</div>
+              <div class="menu-item-desc">Grand royal feast: 2 veg curries, Gutti Vankaya, Ulavacharu, Avakaya, sweet bobbatlu, and unlimited rice.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹299</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-special-andhra-thali" data-name="Special Andhra Thali" data-price="299">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="meals" data-name="Telangana Special Thali">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Telangana Special Thali</div>
+              <div class="menu-item-desc">Traditional Jonna Rotte, Sarva Pindi, Pachi Pulusu, spiced local dal, seasonal vegetable kura, and sweets.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹299</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-telangana-special-thali" data-name="Telangana Special Thali" data-price="299">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 6. BREADS AND ACCOMPANIMENTS ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🫓 Breads &amp; Accompaniments</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="breads" data-name="Chapati">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Chapati (2 pcs)</div>
+              <div class="menu-item-desc">Soft whole wheat griddle flatbreads freshly puffed.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹30</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-chapati" data-name="Chapati (2 pcs)" data-price="30">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="breads" data-name="Butter Naan">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Butter Naan</div>
+              <div class="menu-item-desc">Clay-oven baked leavened bread brushed with melted butter.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹55</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-butter-naan" data-name="Butter Naan" data-price="55">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="breads" data-name="Plain Rice">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Plain Rice</div>
+              <div class="menu-item-desc">Steamed premium Sona Masoori rice.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹79</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-plain-rice" data-name="Plain Rice" data-price="79">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="breads" data-name="Curd Rice">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Curd Rice (Perugu Annam)</div>
+              <div class="menu-item-desc">Comforting mashed rice mixed with fresh curd, tempered with mustard seeds, ginger, green chillies, and pomegranate.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹99</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-curd-rice" data-name="Curd Rice" data-price="99">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 7. SWEETS AND DESSERTS ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🍯 Sweets &amp; Desserts</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="sweets" data-name="Double Ka Meetha">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Double Ka Meetha</div>
+              <div class="menu-item-desc">Traditional Hyderabadi bread pudding soaked in saffron infused milk, cardamom, and toasted nuts.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹99</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-double-ka-meetha" data-name="Double Ka Meetha" data-price="99">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="sweets" data-name="Qubani Ka Meetha">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Qubani Ka Meetha</div>
+              <div class="menu-item-desc">Slow-stewed dried apricots served with apricot kernels and fresh clotted malai cream.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹119</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-qubani-ka-meetha" data-name="Qubani Ka Meetha" data-price="119">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="sweets" data-name="Bobbatlu">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Bobbatlu (2 pcs)</div>
+              <div class="menu-item-desc">Warm Telugu sweet flatbread stuffed with sweet chana dal and jaggery, topped with warm desi ghee.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹79</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-bobbatlu" data-name="Bobbatlu" data-price="79">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="sweets" data-name="Gulab Jamun">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Gulab Jamun (2 pcs)</div>
+              <div class="menu-item-desc">Soft golden mawa dumplings soaked in rose and cardamom scented sugar syrup.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹79</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-gulab-jamun" data-name="Gulab Jamun" data-price="79">Add to Cart</button>
+            </div>
+          </div>
+
+          <!-- ==================== 8. BEVERAGES ==================== -->
+          <div class="menu-section-header" style="margin: 2.5rem 0 1rem; border-bottom: 2px solid var(--color-turmeric); padding-bottom: 0.5rem;">
+            <h2 style="font-size: 1.6rem; color: var(--color-maroon);">🥤 Beverages</h2>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="beverages" data-name="Buttermilk">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Majjiga (Spiced Buttermilk)</div>
+              <div class="menu-item-desc">Refreshing churned buttermilk infused with crushed ginger, green chillies, curry leaves, and asafoetida.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹39</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-buttermilk" data-name="Spiced Buttermilk" data-price="39">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="beverages" data-name="Sweet Lassi">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Sweet Lassi</div>
+              <div class="menu-item-desc">Thick churned sweet yogurt topped with a dollop of fresh cream and cardamom.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹79</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-sweet-lassi" data-name="Sweet Lassi" data-price="79">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="beverages" data-name="Fresh Lime Soda">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>Fresh Lime Soda</div>
+              <div class="menu-item-desc">Freshly squeezed lime juice with sparkling soda (Sweet / Salt / Mixed).</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹69</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-lime-soda" data-name="Fresh Lime Soda" data-price="69">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="menu-item-row menu-filter-item" data-category="beverages" data-name="Filter Coffee">
+            <div class="menu-item-main">
+              <div class="menu-item-name"><span class="diet-dot veg"></span>South Indian Filter Coffee</div>
+              <div class="menu-item-desc">Authentic freshly brewed chicory-infused coffee decoction poured frothy with hot milk in a traditional dabarah.</div>
+            </div>
+            <div class="menu-item-side">
+              <div class="menu-item-price">₹49</div>
+              <button class="btn btn-primary btn-sm add-to-cart-btn" data-id="menu-filter-coffee" data-name="Filter Coffee" data-price="49">Add to Cart</button>
+            </div>
+          </div>
+
+        </div> <!-- End Menu Items Container -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART SIDEBAR MODAL -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar" aria-labelledby="cartSidebarTitle" role="dialog" aria-modal="true">
+    <div class="cart-header">
+      <h3 id="cartSidebarTitle">Your Telugu Feast (Demo)</h3>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+    <div class="cart-items-wrap" id="cartItemsContainer"></div>
+    <div class="cart-footer">
+      <div class="cart-summary-line"><span>Subtotal:</span><span id="cartSubtotal">₹0</span></div>
+      <div class="cart-summary-line"><span>Estimated GST (5% Demo):</span><span id="cartTax">₹0</span></div>
+      <div class="cart-summary-total"><span>Total Bill:</span><span id="cartTotal">₹0</span></div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" style="margin-top: 1rem;" disabled>Proceed to Demo Checkout</button>
+      <div class="demo-note">* Demonstration only. No real payment or orders processed.</div>
+    </div>
+  </aside>
+
+  <!-- DEMO CONFIRMATION / PREVIEW MODAL -->
+  <div class="modal-overlay" id="demoModal" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="demoModalClose" aria-label="Close modal">&times;</button>
+      <div class="modal-body">
+        <h3 id="demoModalTitle" style="color: var(--color-maroon); margin-bottom: 1rem;">Modal Title</h3>
+        <div id="demoModalContent">Modal Content</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Back to top">↑</button>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo-text">TELUGU RESTAURANT</div>
+          <div class="logo-subtext">Authentic Andhra &amp; Telangana Flavours</div>
+          <p class="footer-desc">
+            A celebration of traditional South Indian culinary art, showcasing the vibrant spices, authentic thalis, aromatic dum biryanis, and warm hospitality of the Telugu states.
+          </p>
+          <div class="social-links" aria-label="Social media links">
+            <span class="social-pill" title="Facebook">f</span>
+            <span class="social-pill" title="Instagram">📸</span>
+            <span class="social-pill" title="YouTube">▶</span>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="menu.html">Full Food Menu</a></li>
+            <li><a href="specialties.html">Telugu Specialties</a></li>
+            <li><a href="biryani-meals.html">Biryani &amp; Meals</a></li>
+            <li><a href="offers.html">Special Offers</a></li>
+            <li><a href="gallery.html">Visual Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Reservations</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Menu Highlights</h4>
+          <ul class="footer-links">
+            <li><a href="menu.html">Vegetarian Starters</a></li>
+            <li><a href="menu.html">Non-Vegetarian Starters</a></li>
+            <li><a href="menu.html">Andhra Special Curries</a></li>
+            <li><a href="menu.html">Dum Biryanis</a></li>
+            <li><a href="menu.html">Banana Leaf Bhojanam</a></li>
+            <li><a href="menu.html">Traditional Sweets</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Restaurant Information</h4>
+          <div class="footer-contact-item"><span class="icon">📍</span><span>Sample Restaurant Address, Hyderabad, Telangana, India</span></div>
+          <div class="footer-contact-item"><span class="icon">📞</span><span>+91 90000 00000 (Demo Line)</span></div>
+          <div class="footer-contact-item"><span class="icon">✉️</span><span>demo@example.com</span></div>
+          <div class="footer-contact-item"><span class="icon">⏰</span><span>Open Daily: 11:00 AM – 11:00 PM</span></div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 TELUGU RESTAURANT. Generic category demonstration website. All rights reserved.</p>
+        <p>Built with pure HTML5, CSS3, and Vanilla JavaScript. Features 10 reusable CSS image placeholders prepared for Google Flow replacement.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
